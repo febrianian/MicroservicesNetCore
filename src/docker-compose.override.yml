@@ -9,8 +9,8 @@ services:
     volumes:
       - mongo_data:/data/db
 
-  catalogapi:
-    container_name: catalogapi    
+  catalog_api:
+    container_name: catalog_api    
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "DatabaseSettings:ConnectionString=mongodb://catalogdb:27017"
