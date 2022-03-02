@@ -39,10 +39,10 @@ namespace DiscountAPI.Extensions
                                         Amount Int)";
                     command.ExecuteNonQuery();
 
-                    command.CommandText = "Inserrt into Coupon(ProductName, Description, Amount) values ('iPhone X', 'iPhone X Discount', 150);";
+                    command.CommandText = "Insert into Coupon(ProductName, Description, Amount) values ('iPhone X', 'iPhone X Discount', 150);";
                     command.ExecuteNonQuery();
 
-                    command.CommandText = "Inserrt into Coupon(ProductName, Description, Amount) values ('Samsung 10', 'Samsung 10 Discount', 100);";
+                    command.CommandText = "Insert into Coupon(ProductName, Description, Amount) values ('Samsung 10', 'Samsung 10 Discount', 100);";
                     command.ExecuteNonQuery();
 
                     logger.LogInformation("Migrating postresql database.");
